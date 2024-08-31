@@ -27,7 +27,11 @@ const config: Config = {
         },
       },
       animation: {
-        slidein: "slidein 1.5s ease 300ms forwards",
+        slidein300: "slidein 1.5s ease 300ms forwards",
+        slidein450: "slidein 1.5s ease 450ms forwards",
+        slidein600: "slidein 1.5s ease 600ms forwards",
+        slidein750: "slidein 1.5s ease 750ms forwards",
+        slidein900: "slidein 1.5s ease 900ms forwards",
       },
     },
   },
