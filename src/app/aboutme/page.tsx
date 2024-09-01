@@ -1,4 +1,4 @@
-import ListItem from '@/components/customlist'
+import ListItem from "@/components/customlist";
 
 export default function Page() {
   return (
@@ -17,8 +17,8 @@ export default function Page() {
             Hi, I'm Yuri, I'm a beginner Front-end Developer that knows a little
             bit of UI/UX
           </p>
-          <div className="flex pl-14 gap-x-12 mt-4">
-            <div className="opacity-0 animate-slidein900">
+          <div className="flex pl-14 gap-x-12 mt-4 ">
+            <div className="opacity-0 animate-slidein900 bg-black/20 py-4 px-6 rounded-xl border-2 border-black/25">
               <h2 className="text-2xl font-medium">Hard Skills</h2>
               <ListItem item="Figma" />
               <ListItem item="Javascript" />
