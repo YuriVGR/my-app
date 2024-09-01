@@ -32,10 +32,15 @@ const config: Config = {
         slidein600: "slidein 1.5s ease 600ms forwards",
         slidein750: "slidein 1.5s ease 750ms forwards",
         slidein900: "slidein 1.5s ease 900ms forwards",
+        slidein1050: "slidein 1.5s ease 1050ms forwards",
+        slidein1200: "slidein 1.5s ease 1200ms forwards",
+        slidein1350: "slidein 1.5s ease 1350ms forwards",
+        slidein1500: "slidein 1.5s ease 1500ms forwards",
       },
     },
   },
   plugins: [],
   darkMode: "selector",
 };
+
 export default config;
