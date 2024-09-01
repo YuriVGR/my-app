@@ -1,5 +1,4 @@
 import Image from "next/image";
-import MyModel from "@/components/3dcube";
 
 export default function Home() {
   return (
