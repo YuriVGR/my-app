@@ -12,7 +12,7 @@ export default function ListItem({
   return (
     <div className="flex items-center gap-x-2 pl-2">
       <FontAwesomeIcon icon={faAngleRight} />
-      <p>{item}</p>
+      <p className="font-light ">{item}</p>
     </div>
   );
 }

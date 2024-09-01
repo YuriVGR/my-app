@@ -19,7 +19,7 @@ export default function Page() {
             }
           </p>
           <div className="flex pl-14 gap-x-8 mt-4 ">
-            <div className="opacity-0 animate-slidein900 bg-black/20 py-4 px-4 rounded-lg border-32 border-black/25">
+            <div className="opacity-0 animate-slidein900  py-4 px-4 rounded-lg border-2 dark:border-black/20 dark:bg-black/20 bg-blue-300/20 border-blue-400/20">
               <h2 className="text-2xl font-medium">Soft Skills</h2>
               <ListItem item="Friendliness" />
               <ListItem item="Confidence" />
@@ -28,7 +28,7 @@ export default function Page() {
               <ListItem item="Motivated" />
               <ListItem item="Adaptability" />
             </div>
-            <div className="opacity-0 animate-slidein1200 bg-black/20 py-4 px-4 rounded-lg border-32 border-black/25">
+            <div className="opacity-0 animate-slidein1200  py-4 px-4 rounded-lg border-2 dark:border-black/20 dark:bg-black/20 bg-blue-300/20 border-blue-400/20">
               <h2 className="text-2xl font-medium">Hard Skills</h2>
               <ListItem item="Figma" />
               <ListItem item="Javascript" />
