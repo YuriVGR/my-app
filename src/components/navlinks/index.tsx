@@ -21,20 +21,23 @@ export default function NavLink({
 
   return (
     <div className=" flex justify-center items-center hover:scale-110 transition-all drop-shadow flex-col group">
-      <div className="invisible group-hover:visible absolute bottom-12 pointer-events-none  p-1 px-2 bg-blue-200 dark:bg-black/25 rounded-full ">
-        <p className="text-xs text-nowrap font-light">{text}</p>
+      <div className="invisible group-hover:visible absolute bottom-10 pointer-events-none  p-1 px-2 bg-blue-100 dark:bg-black/25 rounded-full ">
+        <p className="text-xs text-nowrap font-normal">{text}</p>
       </div>
       <Link
         href={page}
         className={clsx(
-          "flex items-center justify-center size-7 hover:bg-blue-200 dark:hover:bg-white/10 rounded-full",
+          "flex items-center justify-center size-7 rounded-full",
           {
             "bg-blue-300 hover:bg-blue-300 text-white dark:bg-white dark:text-black dark:hover:text-black dark:hover:bg-white":
               pathname === page,
+          },
+          {
+            "hover:bg-blue-100 dark:hover:bg-white/10": pathname !== page,
           }
         )}
       >
-        <FontAwesomeIcon icon={icon} size={"sm"} />
+        <FontAwesomeIcon icon={icon} size="sm" />
       </Link>
     </div>
   );
