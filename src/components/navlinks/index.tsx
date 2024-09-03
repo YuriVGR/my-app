@@ -27,7 +27,11 @@ export default function NavLink({
       <Link
         href={page}
         className={clsx(
-          "flex items-center justify-center size-7 hover:bg-blue-200 dark:hover:bg-white dark:hover:text-black rounded-full", { 'bg-blue-200 text-white dark:bg-white dark:text-black' : pathname === page}
+          "flex items-center justify-center size-7 hover:bg-blue-200 dark:hover:bg-white/10 rounded-full",
+          {
+            "bg-blue-300 hover:bg-blue-300 text-white dark:bg-white dark:text-black dark:hover:text-black dark:hover:bg-white":
+              pathname === page,
+          }
         )}
       >
         <FontAwesomeIcon icon={icon} size={"sm"} />
