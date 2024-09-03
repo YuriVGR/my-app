@@ -10,14 +10,16 @@ export default function DarkToggle() {
   };
 
   return (
-    <button
-      onClick={toggleDarkMode}
-      className="size-8 flex justify-center items-center rounded-full hover:bg-blue-200 dark:hover:bg-white/10 hover:scale-110 transition-all drop-shadow flex-col group"
-    >
-      <div className="invisible group-hover:visible absolute bottom-12 pointer-events-none  p-1 px-2 bg-blue-200 dark:bg-black/25 rounded-full">
+    <div className="transition-all drop-shadow flex flex-col group items-center justify-center">
+      <div className="invisible group-hover:visible absolute bottom-10 pointer-events-none  p-1 px-2 bg-blue-200 dark:bg-black/25 rounded-full">
         <p className="text-xs text-nowrap ">Dark Mode</p>
       </div>
-      <FontAwesomeIcon icon={faLightbulb} />
-    </button>
+      <button
+        onClick={toggleDarkMode}
+        className="size-6 flex justify-center items-center rounded-full hover:bg-blue-200 dark:hover:bg-white/10 hover:scale-110 transition-all"
+      >
+        <FontAwesomeIcon icon={faLightbulb} size="sm" />
+      </button>
+    </div>
   );
 }
