@@ -13,6 +13,7 @@ export default function Page() {
             url={project.image}
             description={project.description}
             key={project.id}
+            id={project.id}
           />
         ))}
       </div>
