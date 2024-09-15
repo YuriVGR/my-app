@@ -16,8 +16,17 @@ export default function Page() {
               "Hi, I'm Yuri, I'm a beginner Front-end Developer that knows a little bit of UI/UX"
             }
           </p>
-          <div className="flex md:justify-start justify-between w-full md:flex-row gap-x-8">
-            
+          <div className="flex md:justify-start justify-between w-full md:flex-row gap-x-8"></div>
+          <div>
+            <details>
+              <summary>Hard Skills</summary>
+              <div>
+                <p>Figma</p>
+                <p>Typescript</p>
+                <p>Next.JS</p>
+                <p>React</p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
