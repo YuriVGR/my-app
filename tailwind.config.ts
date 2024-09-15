@@ -25,6 +25,19 @@ const config: Config = {
             transform: "translateY(0)",
           },
         },
+        typing: {
+          from: {
+            opacity: "0",
+            width: "0%",
+            border: "0 0 0 2px solid #ffffff",
+          },
+          via: {},
+          to: {
+            opacity: "1",
+            width: "100%",
+            border: "0 0 0 2px solid #ffffff0",
+          },
+        },
       },
       animation: {
         slidein300: "slidein 1.5s ease 300ms forwards",
@@ -36,6 +49,9 @@ const config: Config = {
         slidein1200: "slidein 1.5s ease 1200ms forwards",
         slidein1350: "slidein 1.5s ease 1350ms forwards",
         slidein1500: "slidein 1.5s ease 1500ms forwards",
+        typed300: "typing 2s ease 300ms forwards",
+        typed1700: "typing 2s ease 1700ms forwards",
+        typed3100: "typing 3s ease 3100ms forwards",
       },
     },
   },

@@ -1,12 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLoader } from "@fortawesome/pro-duotone-svg-icons";
+import Card from "@/components/card";
+import { projectData } from "@/data/projectsData";
 
 export default function Page() {
   return (
-    <main className="flex  justify-center items-center h-full w-full gap-5">
-      <div className="flex flex-col opacity-0 animate-slidein300">
-        <h1 className="text-6xl font-black">WORK IN PROGRESS</h1>
-        <FontAwesomeIcon icon={faLoader} spin size="4x" />
+    <main className="flex  justify-center items-center h-full w-full ">
+      <div className="grid grid-cols-3 opacity-0 animate-slidein300 gap-6">
+        {projectData.map((project) => (
+          <Card
+            name={project.title}
+            url={project.image}
+            description={project.description}
+            key={project.id}
+            id={project.id}
+          />
+        ))}
       </div>
     </main>
   );
